@@ -13,6 +13,7 @@
 
 https://mintroll.herokuapp.com/
 
+
 ## Getting Started
 
 - Clone the repository using `https://github.com/shubhsk88/ror-social-scaffold.git`
