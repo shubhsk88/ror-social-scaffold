@@ -1,8 +1,13 @@
 <section class="user-section">
-  <h2><%= "Name: #{@user.name}" %></h2>
+  <h2><%= "Name: #{@user.name}" %>     </h2>
+   <%if check_profile(@user)%>
+   <%= button_to "Add Friend",friendships_path(user_id:@user)%>
+   <%end%>
   <article class="timeline">
     <h3>Recent posts:</h3>
+    
     <ul class="posts">
+    
       <%= render @posts %>
     </ul>
   </article>
