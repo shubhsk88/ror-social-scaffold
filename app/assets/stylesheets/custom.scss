@@ -12,7 +12,7 @@ $divider-color: #bdbdbd;
   box-sizing: border-box;
   outline: none;
 }
-
+/* stylelint-disable no-descending-specificity */
 body {
   background: #fff;
   position: relative;
@@ -33,6 +33,16 @@ ul {
 a {
   text-decoration: none;
   color: $primary-color-text;
+}
+
+.nav a {
+  color: $primary-color-light;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.nav a:hover {
+  color: #fff;
 }
 
 .nav {
@@ -57,16 +67,6 @@ a {
       }
     }
   }
-}
-
-.nav a {
-  color: $primary-color-light;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.nav a:hover {
-  color: #fff;
 }
 
 .main {
@@ -278,7 +278,7 @@ form {
         font-size: 0.8em;
         width: 90%;
       }
-      
+
       span {
         position: absolute;
         right: 3px;
@@ -349,3 +349,4 @@ form {
     width: 50%;
   }
 }
+/* stylelint-enable no-descending-specificity */
